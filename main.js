@@ -1,37 +1,92 @@
-function isEvenlyDivisible() {
+function isEvenlyDivisible(num1, num2) {
+  if(num1 === num2 % 2){
+    num2 = num1 + num1;
+    return true
+  } 
+   else{
+   
+ }
+  return false
 }
 
-function halfSquare() {
+function halfSquare(num) {
+ return (num * num) /2; 
 }
 
-function isLong() {
+function isLong(str) {
+  if (str.length >=14) {
+    return true
+  } else{
+    return false
+  }
 }
 
-function exclaim() {
+function exclaim(str) {
+  const newStr = '';
+  for (let i = 0; i < str.length; i++) {
+    newStr = str.length + '!';
+  }
+  return newStr
 }
 
-function countWords() {
+function countWords(str) {
+  let strCount = 1
+  for (let i = 0; i < str.length; i++) {
+    if (str.includes(' ')) {
+      let strCount = strCount + 1;
+    } else {
+      return strCount
+    }
+  }
 }
 
-function containsDigit() {
+function containsDigit(str) {
+  let newStr = '';
+  if (str.containsDigit) {
+    newStr = newStr + str;
+  } else if (str.containsNonAlphanumeric) {
+    newStr = newStr + str;
+  } else {newStr = ''}
+  return true
 }
 
-function containsLowerCase() {
+
+function containsLowerCase(str) {
+ if (str.containsUpperCase) {
+}
+return true
 }
 
-function containsUpperCase() {
+function containsUpperCase(str) {
+  if (str.containsUpperCase) {
+
+  }
+  return true
 }
 
-function containsNonAlphanumeric() {
+function containsNonAlphanumeric(str) {
 }
 
-function containsSpace() {
+function containsSpace(str) {
+  let newStr = ''
+  for (let i=0;i<str.length;i++){
+    if (str.includes('')) {
+      newStr = newStr + str
+    } else if (str.includes('abcdefghijklmnopqrstuvwxyz')) {
+
+    }
+  }
+  
+  return true
+
 }
 
-function digits() {
+function digits(str) {
+
 }
 
-function truncate() {
+function truncate(str) {
+  str.slice(3,8)
 }
 
 function isValidPassword() {
